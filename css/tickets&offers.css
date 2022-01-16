@@ -1,0 +1,205 @@
+/* tickets page style  */
+/* *********** */
+
+.hero-background-container--tickets {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.8),
+      rgba(34, 34, 34, 0.8)
+    ),
+    url(../img/tickets/ticket-hero-page.jpg);
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 9.6rem;
+  position: relative;
+}
+.hero-container--tickets {
+  width: 1200px;
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.hero-container-inner--tickets {
+  width: 50%;
+}
+.hero-container-inner--tickets h1 {
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2;
+}
+.hero-tickets-text {
+  font-size: 2.4rem;
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+/* buy-ticket section and aside column */
+/* ************* */
+.tickets-container {
+  display: grid;
+  grid-template-columns: 5fr 1.5fr;
+  column-gap: 2rem;
+}
+/* asdie column */
+.ticket-aside-info {
+  background-color: #fdf2e9;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #333;
+  box-shadow: inset 3px 0 3px -3px #c0c0c0;
+  margin-top: 4.8rem;
+  margin-bottom: 16.8rem;
+  text-align: center;
+  padding: 3.2rem;
+  display: grid;
+}
+
+/* section buy-ticket-form */
+.section-buy-ticket {
+  padding: 4.8rem 0 12rem 0;
+}
+.buy-ticket {
+  background-color: #fa5252;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(90deg, #fa8787, #fa5252);
+  /* temp */
+  /* height: 150rem; */
+  overflow: hidden;
+}
+.buy-ticket:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.buy-ticket--left {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.buy-ticket--right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.buy-ticket-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #2e1907;
+}
+.buy-ticket .heading-secondary {
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+}
+.buy-ticket-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.buy-ticket-img-box--children {
+  background-image: linear-gradient(
+      90deg,
+      rgba(235, 131, 118, 0.33),
+      rgba(238, 88, 68, 0.316)
+    ),
+    url(../img/tickets/children-ticket.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.buy-ticket-img-box--adult {
+  background-image: linear-gradient(
+      -90deg,
+      rgba(235, 131, 118, 0.33),
+      rgba(238, 88, 68, 0.316)
+    ),
+    url(../img/tickets/adult-ticket.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.buy-ticket-img-box--family {
+  background-image: linear-gradient(
+      -90deg,
+      rgba(235, 131, 118, 0.33),
+      rgba(238, 88, 68, 0.316)
+    ),
+    url(../img/tickets/family-tickets.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.buy-ticket-img-box--group {
+  background-image: linear-gradient(
+      -90deg,
+      rgba(235, 131, 118, 0.33),
+      rgba(238, 88, 68, 0.316)
+    ),
+    url(../img/tickets/group-ticket.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.buy-ticket-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.buy-ticket-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.buy-ticket-form input,
+.buy-ticket-form select {
+  padding: 1.2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  color: inherit;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.buy-ticket-form input::placeholder {
+  color: #aaa;
+}
+
+.buy-ticket *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(221, 221, 221, 0.515);
+}
+
+@media (max-width: 60em) {
+  .hero-container-inner--tickets {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-container-inner--tickets h1 {
+    font-size: 4.8rem;
+  }
+  /* 
+  change 2 column into 1
+  reduce aside column font-size */
+  .tickets-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .buy-ticket-text-box {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    color: #2e1907;
+  }
+  .section-buy-ticket {
+    padding: 4.8rem 0 4.8rem 0;
+  }
+  .ticket-aside-info {
+    margin-top: 0;
+  }
+}
