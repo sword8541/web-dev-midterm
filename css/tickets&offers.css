@@ -174,6 +174,12 @@
 }
 
 @media (max-width: 60em) {
+  .hero-background-container--tickets {
+    height: 50vh;
+  }
+  .section-hero-tickets {
+    transform: translateY(35rem);
+  }
   .hero-container-inner--tickets {
     width: 100%;
     text-align: center;
@@ -187,6 +193,7 @@
   .tickets-container {
     display: grid;
     grid-template-columns: 1fr;
+    transform: translateY(35rem);
   }
   .heading-tertiary {
     font-size: 2.4rem;

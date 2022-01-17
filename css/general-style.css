@@ -100,7 +100,7 @@ footer {
   font-size: 1.6rem;
   font-weight: 500;
   color: #c92a2a;
-  text-transform: uppercase;
+  text-transform: uppercaeY(35rem)
   margin-bottom: 1.6rem;
   letter-spacing: 0.7px;
 }
@@ -250,6 +250,15 @@ container -- a centered wrapper
     Nav bar and footer
 /* ------------------------ */
 /*Nav bar  */
+
+.header {
+  position: relative;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  overflow: hidden;
+  /* z-index: 1000; */
+}
 .nav-bar img {
   width: 10rem;
   height: 10rem;
@@ -261,6 +270,7 @@ container -- a centered wrapper
 }
 .nav-list {
   list-style: none;
+  padding: 0 2.4rem;
 }
 .nav-list li {
   display: inline-block;
@@ -363,7 +373,6 @@ container -- a centered wrapper
 
 /*  break point */
 /* 
-  around 1344px as  
   around 75em 1200px as ipad or mainstream pad screen size
   around 60em 950px as how the structure of most pages breaks
 */
@@ -377,5 +386,29 @@ container -- a centered wrapper
 @media (max-width: 60em) {
   html {
     font-size: 50%;
+  }
+
+  /* adjust the nave bar menu to smaller screen */
+
+  /* to make the nave bar sticky with scrolling */
+  .header {
+    position: fixed;
+    z-index: 1000;
+  }
+  .section-hero {
+    transform: translateY(35rem);
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.6rem;
   }
 }

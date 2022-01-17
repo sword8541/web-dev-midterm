@@ -114,12 +114,18 @@
 }
 /* **********Media query************ */
 @media (max-width: 60em) {
+  .hero-background-container--attraction {
+    height: 50vh;
+    transform: translateY(35rem);
+  }
+
   .testimonials-container--attraction {
     padding: 6.4rem;
     column-gap: 6.4rem;
   }
   .section-testimonials--attraction {
     grid-template-columns: 1fr;
+    transform: translateY(35rem);
   }
   .gallery {
     grid-template-columns: repeat(6, 1fr);

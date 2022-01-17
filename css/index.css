@@ -106,7 +106,7 @@
   align-items: center;
   font-size: 2rem;
 }
-/* *******Media query***** */
+/* *******Media query to adapt to small screen around 960px***** */
 
 @media (max-width: 60em) {
   .section-hero-frontpage {
