@@ -131,4 +131,12 @@
     align-items: flex-start;
     gap: 1.6rem;
   }
+  /* adjust testimonial row gap and line-height */
+  .testimonial-box h2 {
+    line-height: 1.2;
+  }
+  .testimonial-text {
+    font-style: italic;
+    margin-bottom: 1.6rem;
+  }
 }
