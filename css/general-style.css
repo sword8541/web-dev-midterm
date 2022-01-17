@@ -165,7 +165,7 @@ footer {
 }
 .btn--form:hover {
   background-color: #ddd;
-  color: #333;
+  color: #c92a2a;
 }
 
 /* link style */
@@ -283,6 +283,7 @@ container -- a centered wrapper
   margin: 5px;
   cursor: pointer;
   transition: all 0.4s;
+  color: #343a40;
 }
 .nav-list li:hover {
   background-color: #fa5252;
@@ -304,7 +305,7 @@ container -- a centered wrapper
 .nav-menu:any-link,
 .nav-menu:visited {
   text-decoration: none;
-  /* color: #343a40; */
+  color: #343a40;
 }
 .nav-menu:hover,
 .nav-menu:active {
@@ -423,7 +424,7 @@ container -- a centered wrapper
   footer {
     transform: translateY(35rem);
   }
-/*   to make the whole menubar clickable */
+  /*   to make the whole menubar clickable */
   .nav-list a {
     display: block;
   }
