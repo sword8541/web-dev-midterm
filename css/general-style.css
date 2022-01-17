@@ -422,6 +422,7 @@ container -- a centered wrapper
   footer {
     transform: translateY(35rem);
   }
+/*   to make the whole menubar clickable */
   .nav-list a {
     display: block;
   }
