@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "vscode-web-dev",
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "vscode-web-dev",
+    "liveServer.settings.port": 5533
+  }
+}

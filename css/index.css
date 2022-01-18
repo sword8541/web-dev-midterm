@@ -39,7 +39,27 @@
   font-size: 1.8rem;
   line-height: 1.7;
 }
-
+/* section - videos */
+.section-video {
+  background-color: #fdf2e9;
+}
+.videos-heading {
+  padding-top: 3.6rem;
+}
+.intro-videos {
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
+}
+.intro-video--vertical {
+  grid-row: 1/3;
+}
+.intro-video {
+  justify-self: center;
+  border: 5px #555 solid;
+  border-radius: 2px;
+}
 /*section - testimonial */
 .section-testimonial {
   background-color: #fa5252;

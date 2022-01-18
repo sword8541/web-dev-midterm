@@ -222,4 +222,7 @@
   .hotel-number {
     font-size: 7.2rem;
   }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
 }
