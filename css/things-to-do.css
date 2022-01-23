@@ -140,3 +140,22 @@
     gap: 8rem 3.2rem;
   }
 }
+
+/* adjusted for even smaller screen below 560px  */
+
+@media (max-width: 35em) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .testimonials--attraction {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+  /* adjust attraction image position */
+  .attraction-img-box:nth-child(3) {
+    grid-row: 4;
+  }
+  .attraction-img {
+    transform: translateY(-1.6rem);
+  }
+}

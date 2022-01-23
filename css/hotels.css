@@ -226,3 +226,18 @@
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
 }
+/* adjusted for even smaller screen below 560px  */
+
+@media (max-width: 35em) {
+  /* adjust hotel photo position */
+  .hotel-img-box:nth-child(3) {
+    grid-row: 4;
+  }
+
+  .hotel-img-box {
+    transform: translateY(-1.6rem);
+  }
+  .diets {
+    justify-self: center;
+  }
+}

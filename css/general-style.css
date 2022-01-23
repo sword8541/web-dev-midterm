@@ -27,6 +27,7 @@ Font size (px)
 html {
   /* font-size: 1rem; */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -239,12 +240,6 @@ container -- a centered wrapper
 
 /* *************************** */
 
-.grid-3-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 8rem;
-}
-
 /* ------------------------ */
 /* General component style
     Nav bar and footer
@@ -332,6 +327,7 @@ container -- a centered wrapper
   display: flex;
   list-style: none;
   gap: 2.4rem;
+  justify-content: space-evenly;
 }
 .social-icon {
   height: 2.4rem;
@@ -382,6 +378,7 @@ container -- a centered wrapper
 /* 
   around 75em 1200px as ipad or mainstream pad screen size
   around 60em 950px as how the structure of most pages breaks
+  around 35em 560px for even smaller screen
 */
 
 @media (max-width: 75em) {
@@ -420,12 +417,53 @@ container -- a centered wrapper
     width: 100%;
     margin-bottom: 1.6rem;
   }
-  /* move the footer element for the fixed sticky navbar */
-  footer {
-    transform: translateY(35rem);
-  }
   /*   to make the whole menubar clickable */
   .nav-list a {
     display: block;
   }
+  /* move the footer element for the fixed sticky navbar */
+  footer {
+    transform: translateY(35rem);
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .address-col {
+    grid-row: 1;
+    grid-column: span 4;
+  }
+  .nav-col {
+    grid-column: span 2;
+  }
 }
+
+/* adjusted for even smaller screen below 560px  */
+@media (max-width: 35em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols,
+  .grid--5-cols {
+    grid-template-columns: 1fr;
+  }
+  .section-testimonial .grid--3-cols img {
+    display: none;
+  }
+
+  /* adjust footer */
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col,
+  .address-col {
+    grid-row: 1;
+    grid-column: span 3;
+  }
+} ;

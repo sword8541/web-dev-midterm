@@ -208,3 +208,27 @@
     margin-top: 0;
   }
 }
+/* adjusted for even smaller screen below 560px  */
+
+@media (max-width: 35em) {
+  .buy-ticket--left,
+  .buy-ticket--right {
+    grid-template-columns: 1fr;
+  }
+
+  .buy-ticket-img-box--children,
+  .buy-ticket-img-box--adult,
+  .buy-ticket-img-box--family,
+  .buy-ticket-img-box--group {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .ticket-aside-info .heading-tertiary {
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+  }
+  .ticket-aside-info p {
+    line-height: 3.2rem;
+  }
+}
